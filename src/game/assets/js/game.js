@@ -188,7 +188,7 @@ let game = {
     },
 
     police: {
-      text: "You enter the police precinct. They seem to be running a charity by one of the agents.",
+      text: "You enter the police precinct. They seem to be running a charity by an agent.",
       textClosed: "You arrive at the precinct. You knock the door but no one is answering.",
       closeTime: [ 20, 6 ],
       options: {

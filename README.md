@@ -1,6 +1,6 @@
 # ABQ
 Play the role of Gus Fring in the alternate universe of Breaking Bad.
-
+![](https://github.com/Electr0d/ABQ/blob/master/docs/img/gameplay.gif)
 # Installation
 **Note: You need NPM package manager installed.**
 ```
@@ -15,8 +15,10 @@ npm start
 You can play multiple saves. You don't have to stick to one game.
 
 ## Adventure Game
-Try to last as long as you can. The game does not follow a linear story line and is entirely dependant on you to make the move.
+Try to last as long as you can. The game does not follow a linear story line and is entirely dependant on you to make the move. 
 
+## Sounds
+This game features sounds effects when making choices
 
 
 # FAQ

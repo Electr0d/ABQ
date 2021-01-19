@@ -25,7 +25,17 @@ function uLocation(locationString) {
 function uMoney(money) {
   el.money.textContent = '$' + money; 
 }
-
+class SFX {
+  constructor(src) {
+    this.sound = addElement('audio', { src: src, preload: 'auto', controls: 'none', style: 'display: none' }, '', document.body);
+    this.play = function(){
+      this.sound.play();
+    }
+    this.stop = function(){
+      this.sound.pause();
+    }
+  }
+}
 
 
 
@@ -154,14 +164,15 @@ function selectorMove(direction) {
     option.classList.add('option-highlighted');
   }
 }
-
+let optionSelectedSound = new SFX(path.join(__dirname, 'assets/sounds/option-selected.wav'));
 function selectorSelect() {
   let options = document.querySelectorAll('.option');
   let option = components.selector.highlighted;
 
   if(options && option) {
-      // selection animation
+    // selection animation
     option.classList.add('option-selected');
+    optionSelectedSound.play();
 
     setTimeout(()=> {
       // call function
