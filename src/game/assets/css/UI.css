@@ -1,0 +1,87 @@
+.shake {
+  animation: shake 0.1s linear infinite;
+}
+@keyframes shake {
+  0% {
+    transform: translateX(-3px);
+  }
+  50% {
+    transform: translateX(3px);
+  }
+  100% {
+    transform: translateX(-3px);
+  }
+}
+
+.text {
+  margin: 20px;
+}
+.control-panel {
+  width: calc(100vw - 40px);
+  display: flex;
+  flex-direction: row;
+}
+.options {
+  width: calc(100% - 35px);
+  padding-left: 40px;
+}
+.option {
+  padding: 10px;
+  border-radius: 10px;
+}
+.option-highlighted {
+  background: var(--highlighted-option);
+  padding-left: 30px;
+}
+
+
+.selector,
+.option {
+  height: 60px;
+}
+.selector {
+  transition: 0.1s ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.option-selected {
+  animation: selected-option 0.1s linear 5;
+}
+
+@keyframes selected-option {
+  0% {
+    opacity: 1;
+    filter: hue-rotate(90deg);
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.collection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.gameover {
+  color: var(--important-color);
+  font-size: 27px;
+  animation: game-over 1s ease-out;
+  text-align: center;
+}
+
+@keyframes game-over {
+  from {
+    transform: scale(0.4) translateY(-40px);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

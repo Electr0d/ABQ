@@ -1,0 +1,61 @@
+.title {
+  font-size: 52px;
+}
+
+.title-button {
+  padding: 20px;
+  margin: 20px;
+  font-size: 24px;
+  width: calc(100% - 40px);
+}
+.container,
+.main-buttons,
+.parameters {
+  display: flex;
+}
+
+.container {
+  flex-direction: row;
+}
+
+.main-buttons {
+  flex-direction: column;
+}
+
+.parameters {
+  flex-direction: column;
+}
+
+
+/* new save menu */
+.new-save-container {
+  display: flex;
+  flex-direction: row;
+  backdrop-filter: brightness(1.6);
+}
+.save-container {
+  height: 100px;
+  background: url('../../../global_assets/img/background/dark-grey-background.png');
+  margin: 10px;
+  padding: 10px;
+  position: relative;
+  cursor: pointer;
+}
+.save-container * {
+  position: absolute;
+}
+.save-name {
+  top: 10px;
+  left: 10px;
+}
+
+.save-date {
+  bottom: 10px;
+  left: 10px;
+  font-size: 12px;
+}
+
+.save-location {
+  top: 10px;
+  right: 10px;
+}

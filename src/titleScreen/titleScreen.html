@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../global_assets/css/libraries/windowBar.css">
+  <link rel="stylesheet" href="../global_assets/css/theme.css">
+  <link rel="stylesheet" href="../global_assets/css/template.css">
+  <link rel="stylesheet" href="assets/css/titleScreen.css">
+  <title>ABQ - Title Screen</title>
+</head>
+<body>
+  <!-- Window Controls -->
+  <header id="titlebar">
+    <div id="drag-region">
+      <div id="window-title">
+        <img src="" height="20px">
+        <span style="padding-left: 10px;">Game - Title Screen</span>
+      </div>
+
+      <div id="window-controls">
+        <div class="button" id="min-button">
+          <img src="../global_assets/img/window_icons/minimize.png" class="window-icon">
+        </div>
+        <div class="button" id="max-button">
+          <img src="../global_assets/img/window_icons/maximize.png" class="window-icon">
+        </div>
+        <div class="button" id="restore-button">
+          <img src="../global_assets/img/window_icons/restore.png" class="window-icon">
+        </div>
+        <div class="button" id="close-button">
+          <img src="../global_assets/img/window_icons/close.png" class="window-icon">
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="app">
+    <div class="title">ABQ</div>
+    <div class="container">
+      <div class="main-buttons">
+        <button class="title-button" id="play" onclick="play()">Play</button>
+      <button class="title-button" id="title-quit" onclick="quit()">Quit</button>
+      </div>
+      <div class="parameters">
+        
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <script src="assets/js/titleScreen.js"></script>
+  <script src="../global_assets/js/libraries/windowControls.js"></script>
+  <script src="../global_assets/js/modules/addElement.js"></script>
+  <script src="../global_assets/js/modules/save.js"></script>
+</body>
+</html>

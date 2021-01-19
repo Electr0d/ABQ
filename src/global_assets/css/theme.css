@@ -1,0 +1,25 @@
+:root {
+  /* global variables */
+  --primary-background: rgb(20, 20, 20);
+  --secondary-background: rgb(30, 30, 30);
+  --primary-color: rgb(250, 250, 250);
+  --secondary-color: rgb(220, 220, 220);
+
+  --primary-accent: rgb(50, 110, 200);
+
+  /* input */
+  --input-border: rgb(60, 60, 60);
+
+
+  /* options */
+  --highlighted-option: rgba(50, 110, 200, 0.2);
+
+  /* important */
+  --important-color: rgb(250, 50, 50);
+}
+@font-face {
+	font-family: 'pixel-font';
+	src: url('../fonts/pixel-font.ttf') format('truetype'), url('../fonts/pixel-font.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}

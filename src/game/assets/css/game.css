@@ -1,0 +1,51 @@
+body {
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(20, 20, 20, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+button {
+  font-family: 'pixel-font';
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info { 
+  width: 100vw;
+  height: 40px;
+  position: relative;
+}
+
+.left-info {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.center-info {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.right-info {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-align: right;
+}
+.text {
+  position: absolute;
+  top: 100px;
+
+}
